@@ -1,0 +1,14 @@
+{
+  "name": "practicum",
+  "version": "1.0.0",
+  "description": "Random User Radiator REST API in Node.js",
+  "main": "./<les1/practicum>/<myrandomuser.js>",
+  "scripts": {
+    "start": "node ./<les1/practicum>/<myrandomuser.js>"
+  },
+  "author": "Bas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
