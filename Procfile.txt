@@ -1,0 +1,1 @@
+web: node ./<jouw subdirectory>/<jouw Javascript file>
