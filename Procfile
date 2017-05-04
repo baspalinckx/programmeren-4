@@ -1,1 +1,1 @@
-web: node ./<les1>/<practicum>/<myrandomuser.js>
+web: node ./les1/practicum/myrandomuser.js
