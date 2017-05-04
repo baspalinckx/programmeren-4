@@ -1,6 +1,18 @@
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000
+
+app.get("/api", function(request, response)
+	response.ajax({
+  url: 'https://randomuser.me/api/',
+  dataType: 'json',
+  success: function(data) {
+    console.log(data);
+  }
+}))
+    
+
+
 app.get
 ('/', function(request, response) {
 response.send('Hello Avans!');
