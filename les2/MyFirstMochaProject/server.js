@@ -15,6 +15,9 @@ next();
 app.use('/api/v1', 
 require('./routes/routes_api_v1'))
 
+app.use('/info',
+require('./routes/routes_api_v2'))
+
 app.get('/', function(request, response) {
 response.send('Hello Avans, GET request received');
 })
