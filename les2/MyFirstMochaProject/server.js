@@ -1,7 +1,19 @@
 // dit is mijn server
 var express = require('express');
+
+var config = require('./config.json');
+
 var app = express();
-var port = process.env.PORT || 8000
+app.set('PORT', config.webPort);
+
+var port = process.env.PORT || 3000;
+
+app.all('*', function(request, response, next) {
+console.log(request.method + " " + request.url);
+next();
+})
+app.use('/api/v1', 
+require('./routes/routes_api_v1'))
 
 app.get('/', function(request, response) {
 response.send('Hello Avans, GET request received');
